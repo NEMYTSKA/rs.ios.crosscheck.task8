@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="colorButton" destination="XQj-fa-nYT" id="NCr-Ag-rXp"/>
+                <outletCollection property="colorButton" destination="uaf-4g-eon" id="cET-PU-lki"/>
+                <outletCollection property="colorButton" destination="eEn-DR-Csx" id="TIr-sW-YQ7"/>
+                <outletCollection property="colorButton" destination="JU1-5i-Wg3" id="orX-Wg-qaZ"/>
+                <outletCollection property="colorButton" destination="elW-D5-41F" id="LfH-34-7op"/>
+                <outletCollection property="colorButton" destination="Aw0-yh-odE" id="eyr-5B-wdc"/>
+                <outletCollection property="colorButton" destination="JLh-9C-YzI" id="CeE-PQ-WmG"/>
+                <outletCollection property="colorButton" destination="9JW-R6-HCo" id="HlH-08-OnK"/>
+                <outletCollection property="colorButton" destination="1E5-eg-dAF" id="Jo5-zk-L16"/>
+                <outletCollection property="colorButton" destination="d3n-ao-NYw" id="dNm-Um-AGD"/>
+                <outletCollection property="colorButton" destination="RvQ-Fb-bVL" id="4Bu-B9-uQx"/>
+                <outletCollection property="colorButton" destination="PXV-YU-vqu" id="CLW-T9-ptI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aTI-pG-UKo">
+                    <rect key="frame" x="17.5" y="283.5" width="340" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6Qa-q3-fMs">
+                            <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQj-fa-nYT">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsRed"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="Hiy-ID-Sh2"/>
+                                        <constraint firstAttribute="height" constant="40" id="SzL-Ve-tN0"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleColor" name="rsRed"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="tgB-Pe-UC6"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaf-4g-eon">
+                                    <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsBlue"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Zeb-no-zfq"/>
+                                        <constraint firstAttribute="width" constant="40" id="mc7-2D-VkD"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="RHG-lj-D9m"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEn-DR-Csx">
+                                    <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsGreen"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="3Wo-Og-vfr"/>
+                                        <constraint firstAttribute="height" constant="40" id="X8u-6f-x1f"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="XLh-fO-KLp"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JU1-5i-Wg3">
+                                    <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsGray"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="hnP-Cv-Ka3"/>
+                                        <constraint firstAttribute="width" constant="40" id="uaS-pw-xEw"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="PY3-do-aUk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elW-D5-41F">
+                                    <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsPurple"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="W8T-PA-kZI"/>
+                                        <constraint firstAttribute="height" constant="40" id="oi0-0T-aDK"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="DFd-y0-kuC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw0-yh-odE">
+                                    <rect key="frame" x="300" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsOrange"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="2Ox-v4-RCE"/>
+                                        <constraint firstAttribute="width" constant="40" id="gxI-k6-bC2"/>
+                                    </constraints>
+                                    <color key="tintColor" name="rsOrange"/>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="Lhv-na-rTg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fWj-Lp-W8d">
+                            <rect key="frame" x="0.0" y="60" width="340" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLh-9C-YzI">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsYellow"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="5Ie-8Q-N1L"/>
+                                        <constraint firstAttribute="height" constant="40" id="fz5-Zu-dcN"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleColor" name="rsYellow"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="LqK-HO-Tvm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JW-R6-HCo">
+                                    <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsLightBlue"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="4yI-vb-L1N"/>
+                                        <constraint firstAttribute="height" constant="40" id="gm2-5V-hzZ"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="oAj-uN-hLq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1E5-eg-dAF">
+                                    <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsPink"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="63B-dD-Zj7"/>
+                                        <constraint firstAttribute="width" constant="40" id="Yig-qR-2hD"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="L0c-yo-1vr"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3n-ao-NYw">
+                                    <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="sortOfRsBlack"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="F2n-Ix-uNa"/>
+                                        <constraint firstAttribute="width" constant="40" id="cLj-0B-Hdv"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="Yo6-Zc-UNv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvQ-Fb-bVL">
+                                    <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsDarkGreen"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="gQL-pt-0Uq"/>
+                                        <constraint firstAttribute="height" constant="40" id="kdm-22-Nkj"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="aFx-sL-ZtT"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXV-YU-vqu">
+                                    <rect key="frame" x="300" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" name="rsBrown"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="XqW-UO-pLW"/>
+                                        <constraint firstAttribute="width" constant="40" id="lWq-z4-AJJ"/>
+                                    </constraints>
+                                    <color key="tintColor" name="rsOrange"/>
+                                    <connections>
+                                        <action selector="tappet:" destination="-1" eventType="touchUpInside" id="WkS-LL-E0P"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aTI-pG-UKo" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="dNu-KG-Bwq"/>
+                <constraint firstItem="aTI-pG-UKo" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="gbU-nF-zMj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="rsBlue">
+            <color red="0.24313725490196078" green="0.090196078431372548" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsBrown">
+            <color red="0.38039215686274508" green="0.058823529411764705" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsDarkGreen">
+            <color red="0.054901960784313725" green="0.21568627450980393" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsGray">
+            <color red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsGreen">
+            <color red="0.0" green="0.48627450980392156" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsLightBlue">
+            <color red="0.0" green="0.68235294117647061" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsOrange">
+            <color red="1" green="0.47843137254901963" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsPink">
+            <color red="1" green="0.46666666666666667" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsPurple">
+            <color red="0.61568627450980395" green="0.36862745098039218" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsRed">
+            <color red="0.88627450980392153" green="0.10588235294117647" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rsYellow">
+            <color red="1" green="0.67843137254901964" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sortOfRsBlack">
+            <color red="0.0" green="0.1803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

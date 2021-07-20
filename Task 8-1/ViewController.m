@@ -10,10 +10,13 @@
 #import "ChangeImageViewController.h"
 #import "AnimationView.h"
 #import "MyButton.h"
+#import "ColorViewController.h"
 
 @interface ViewController ()
 
 @property (strong, nonatomic) ChangeImageViewController *changeVC;
+@property (strong, nonatomic) AnimationView *animationView;
+@property (strong, nonatomic) ColorViewController *colorVC;
 
 
 @end
@@ -23,39 +26,55 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.changeVC = [ChangeImageViewController new];
+    self.colorVC = [ColorViewController new];
     [self setupNavigationItems];
-    self.myImage = @"Planet";
-    [self addAnimationView];
     [self configureButtons];
     [self configLabel];
     
     
-    self.myImage = @"Head";
+    [self addAnimationView];
+    
+    
     
     
 }
 
-- (void) configLabel {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 550, 350, 84)];
-    
-    
-    [label setText:@"Привет!!!\rСделал всё что смог сам)\rНе смог передать инфу от кнопок со следующего Viewcontroller на этот. И вообще не понимаю как анимировать."];
-    label.font = [UIFont fontWithName:@"Montserrat-Regular" size:12];
-    label.textColor = UIColor.redColor;
-    label.layer.borderWidth = 1;
-    label.layer.borderColor = [UIColor redColor].CGColor;
-    label.numberOfLines = 0;
-    label.textAlignment = NSTextAlignmentCenter;
-    
-    [self.view addSubview:label];
-    
+-(void)displayImage {
+    self.animationView.currentImage = self.changeVC.myImage;
+    [self.animationView setNeedsDisplay];
 }
+
+- (void) openColor {
+//    ColorViewController *VCC = [[ColorViewController alloc] init];
+    
+    
+    
+    
+//    self.colorVC = [[ColorViewController alloc] init];
+    
+    [self addChildViewController:self.colorVC];
+    
+    
+    [self.view addSubview:self.colorVC.view];
+//    self.colorVC.view.frame = CGRectMake(2, 200, 20,20);
+    [self.colorVC didMoveToParentViewController:self];
+    
+    
+    
+    NSLog(@"Open Color");
+}
+
+
 
 -(void)configureButtons {
     MyButton *openPalette = [[MyButton alloc] initWithFrame:CGRectMake(20, 452, 163, 32)];
     MyButton *draw = [[MyButton alloc] initWithFrame:CGRectMake(243, 452, 91, 32)];
     MyButton *timer = [[MyButton alloc] initWithFrame:CGRectMake(20, 504, 151, 32)];
     MyButton *share = [[MyButton alloc] initWithFrame:CGRectMake(239, 504, 95, 32)];
+    
+    [draw addTarget:self action:@selector(displayImage) forControlEvents:UIControlEventTouchDown];
+    [openPalette addTarget:self action:@selector(openColor) forControlEvents:UIControlEventTouchDown];
+    
     
     [openPalette setTitle:@"Open Palette" forState:UIControlStateNormal];
     [draw setTitle:@"Draw" forState:UIControlStateNormal];
@@ -101,34 +120,19 @@
 
 - (void)addAnimationView {
     AnimationView *animationView = [[AnimationView alloc] initWithFrame:CGRectMake(38, 104, 300, 300)];
+    self.animationView = animationView;
     
-    [self.view addSubview:animationView];
-    
+    [self.view addSubview:self.animationView];
 
-//    self.myImage = @"Head";
-    animationView.currentImage = self.myImage;
-//    self.myImage = @"Landscape";
-//    animationView.currentImage = self.myImage;
-
-    NSLog(@"%@", self.changeVC.myImage);
-    NSLog(@"%@", self.myImage);
-    
 }
 
 - (void) setupNavigationItems {
     self.navigationItem.title = @"Artist";
     
-    
-    
     UIBarButtonItem *drawings = [[UIBarButtonItem alloc] initWithTitle: @"Drawings"
                                                                  style:UIBarButtonItemStylePlain
                                                                 target:self
                                                                 action:@selector(drawing:)];
-    
-    
-    
-    
-
     
     
     self.navigationItem.rightBarButtonItem = drawings;
@@ -154,9 +158,27 @@
 -(void)drawing:(id)sender {
     
     [self.navigationController pushViewController:self.changeVC animated:YES];
+
+}
+
+
+
+
+- (void) configLabel {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 550, 350, 84)];
     
     
-//    [self.navigationController pushViewController:self.drawings animated:YES];
+    [label setText:@"Привет!!!\rКопал столько, сколько смог сам)\r2 нижние кнопки не работают. Image рисуются, \rно пока не разобрался как анимировать."];
+    label.font = [UIFont fontWithName:@"Montserrat-Regular" size:12];
+    label.textColor = UIColor.redColor;
+    label.layer.borderWidth = 1;
+    label.layer.borderColor = [UIColor redColor].CGColor;
+    label.numberOfLines = 0;
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    [self.view addSubview:label];
+    
+
 }
 
 

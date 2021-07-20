@@ -17,10 +17,11 @@
     if (self) {
         [self setBackgroundColor:[UIColor whiteColor]];
         [self.layer setShadowColor:[UIColor colorWithRed:0 green:0.7 blue:1 alpha:0.25].CGColor];
-        [self.layer setShadowRadius:4.0f];
-        [self.layer setShadowOpacity:1.0f];
+//        [self.layer setShadowRadius:4];
+        [self.layer setShadowOpacity:1];
         [self.layer setShadowOffset:CGSizeMake(0, 0)];
-        [self.layer setCornerRadius:8.0f];
+
+//        [self.layer setCornerRadius:8];
     }
     return self;
 }
@@ -28,7 +29,7 @@
 
 - (void)drawRect:(CGRect)rect {
  
-    if ([self.currentImage isEqualToString:@"Head"]) {
+    if ([self.currentImage isEqual:@"Head"]) {
         [self drawHead];
     } else if ([self.currentImage isEqualToString:@"Landscape"]) {
         [self drawLandscape];
@@ -43,12 +44,11 @@
     
     UIColor* fillColor = [UIColor colorWithRed: 1 green: 1 blue: 1 alpha: 1];
     UIColor* strokeColor = [UIColor colorWithRed: 0 green: 0 blue: 0 alpha: 1];
-    
-    
+
         UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0, 0, 300, 300)];
         [fillColor setFill];
         [rectanglePath fill];
-        
+
 
         UIBezierPath* bezierPath = [UIBezierPath bezierPath];
         [bezierPath moveToPoint: CGPointMake(71.91, 43.24)];
@@ -72,8 +72,8 @@
         bezierPath.miterLimit = 4;
         bezierPath.lineCapStyle = kCGLineCapRound;
         [bezierPath stroke];
-        
-        
+
+//
         UIBezierPath* bezier2Path = [UIBezierPath bezierPath];
         [bezier2Path moveToPoint: CGPointMake(180, 105.88)];
         [bezier2Path addLineToPoint: CGPointMake(172.5, 104.56)];
@@ -119,8 +119,8 @@
         bezier2Path.miterLimit = 4;
         bezier2Path.lineCapStyle = kCGLineCapRound;
         [bezier2Path stroke];
-        
-
+//
+//
         UIBezierPath* bezier3Path = [UIBezierPath bezierPath];
         [bezier3Path moveToPoint: CGPointMake(184.85, 108.09)];
         [bezier3Path addLineToPoint: CGPointMake(188.82, 113.38)];
@@ -174,6 +174,8 @@
         bezier3Path.miterLimit = 4;
         bezier3Path.lineCapStyle = kCGLineCapRound;
         [bezier3Path stroke];
+
+    
     
 }
 

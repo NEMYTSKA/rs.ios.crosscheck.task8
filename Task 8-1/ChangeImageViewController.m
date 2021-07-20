@@ -24,26 +24,28 @@
     self.navigationItem.title = @"Drawings";
     
 }
-- (IBAction)planetButtonTappet:(UIButton *)sender {
+- (IBAction)planetTappet:(id)sender {
     self.myImage = @"Planet";
-
-    NSLog(@"%@", self.myImage);
-//    self.myImageView.currentImage = @"Planet";
+    //    NSLog(@"%@", self.myImage);
     [self back:sender];
 }
-
-- (IBAction)headButtonTappet:(id)sender {
+- (IBAction)headTappet:(id)sender {
     self.myImage = @"Head";
-    [self back:sender];
+    //    NSLog(@"%@", self.myImage);
+        [self back:sender];
 }
-- (IBAction)treeButtonTappet:(id)sender {
-    self.myImage = @"Tree";
-    [self back:sender];
+- (IBAction)treeTappet:(id)sender {
+     self.myImage = @"Tree";
+    //    NSLog(@"%@", self.myImage);
+        [self back:sender];
 }
-- (IBAction)landscpeButtonTappet:(id)sender {
-    self.myImage = @"Landscape";
-    [self back:sender];
+- (IBAction)landscapeTappet:(id)sender {
+      self.myImage = @"Landscape";
+    //    NSLog(@"%@", self.myImage);
+        [self back:sender];
 }
+
+
 
 
 

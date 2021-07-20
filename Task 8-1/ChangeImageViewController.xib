@@ -41,7 +41,7 @@
                                 <color key="titleColor" name="Light Green Sea"/>
                             </state>
                             <connections>
-                                <action selector="planetButtonTappet:" destination="-1" eventType="touchDown" id="J3d-an-7So"/>
+                                <action selector="planetTappet:" destination="-1" eventType="touchUpInside" id="aVo-gd-LS8"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNd-Fm-dwb" customClass="MyButton">
@@ -55,7 +55,7 @@
                                 <color key="titleColor" name="Light Green Sea"/>
                             </state>
                             <connections>
-                                <action selector="headButtonTappet:" destination="-1" eventType="touchDown" id="bSv-jj-Hm7"/>
+                                <action selector="headTappet:" destination="-1" eventType="touchUpInside" id="WXH-9u-2aj"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjl-Ei-GTY" customClass="MyButton">
@@ -69,7 +69,7 @@
                                 <color key="titleColor" name="Light Green Sea"/>
                             </state>
                             <connections>
-                                <action selector="treeButtonTappet:" destination="-1" eventType="touchDown" id="X6C-df-dNj"/>
+                                <action selector="treeTappet:" destination="-1" eventType="touchUpInside" id="GKY-pW-PQM"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXg-5d-gBV" customClass="MyButton">
@@ -84,7 +84,7 @@
                                 <color key="titleColor" name="Light Green Sea"/>
                             </state>
                             <connections>
-                                <action selector="landscpeButtonTappet:" destination="-1" eventType="touchDown" id="c1s-0e-lqG"/>
+                                <action selector="landscapeTappet:" destination="-1" eventType="touchUpInside" id="11B-zs-KLo"/>
                             </connections>
                         </button>
                     </subviews>

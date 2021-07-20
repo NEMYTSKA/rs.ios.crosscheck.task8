@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4935378926A5CF3E00ED8944 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4935378726A5CF3E00ED8944 /* Montserrat-Medium.ttf */; };
-		4935378A26A5CF3E00ED8944 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4935378826A5CF3E00ED8944 /* Montserrat-Regular.ttf */; };
+		491030A726A6F8BE00A1667A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 491030A526A6F8BE00A1667A /* Montserrat-Medium.ttf */; };
+		491030A826A6F8BE00A1667A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 491030A626A6F8BE00A1667A /* Montserrat-Regular.ttf */; };
+		4935378E26A6E30300ED8944 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4935378C26A6E30300ED8944 /* ColorViewController.m */; };
+		4935378F26A6E30300ED8944 /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4935378D26A6E30300ED8944 /* ColorViewController.xib */; };
 		49AA773626A461360009EF64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AA773526A461360009EF64 /* AppDelegate.m */; };
 		49AA773926A461360009EF64 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AA773826A461360009EF64 /* SceneDelegate.m */; };
 		49AA773C26A461360009EF64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AA773B26A461360009EF64 /* ViewController.m */; };
@@ -23,8 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4935378726A5CF3E00ED8944 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		4935378826A5CF3E00ED8944 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		491030A526A6F8BE00A1667A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		491030A626A6F8BE00A1667A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		4935378B26A6E30300ED8944 /* ColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		4935378C26A6E30300ED8944 /* ColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		4935378D26A6E30300ED8944 /* ColorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
 		49AA773126A461360009EF64 /* Task 8-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task 8-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AA773426A461360009EF64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49AA773526A461360009EF64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +93,9 @@
 				49AA775526A469930009EF64 /* ChangeImageViewController.h */,
 				49AA775626A469930009EF64 /* ChangeImageViewController.m */,
 				49AA775726A469930009EF64 /* ChangeImageViewController.xib */,
+				4935378B26A6E30300ED8944 /* ColorViewController.h */,
+				4935378C26A6E30300ED8944 /* ColorViewController.m */,
+				4935378D26A6E30300ED8944 /* ColorViewController.xib */,
 				49AA775A26A474600009EF64 /* MyButton.h */,
 				49AA775B26A474600009EF64 /* MyButton.m */,
 				49AA773D26A461360009EF64 /* Main.storyboard */,
@@ -102,8 +110,8 @@
 		49AA774D26A461BD0009EF64 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4935378726A5CF3E00ED8944 /* Montserrat-Medium.ttf */,
-				4935378826A5CF3E00ED8944 /* Montserrat-Regular.ttf */,
+				491030A526A6F8BE00A1667A /* Montserrat-Medium.ttf */,
+				491030A626A6F8BE00A1667A /* Montserrat-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -165,11 +173,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4935378A26A5CF3E00ED8944 /* Montserrat-Regular.ttf in Resources */,
 				49AA775926A469930009EF64 /* ChangeImageViewController.xib in Resources */,
-				4935378926A5CF3E00ED8944 /* Montserrat-Medium.ttf in Resources */,
 				49AA774426A461370009EF64 /* LaunchScreen.storyboard in Resources */,
+				491030A826A6F8BE00A1667A /* Montserrat-Regular.ttf in Resources */,
 				49AA774126A461370009EF64 /* Assets.xcassets in Resources */,
+				4935378F26A6E30300ED8944 /* ColorViewController.xib in Resources */,
+				491030A726A6F8BE00A1667A /* Montserrat-Medium.ttf in Resources */,
 				49AA773F26A461360009EF64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +196,7 @@
 				49AA774726A461370009EF64 /* main.m in Sources */,
 				49AA775C26A474600009EF64 /* MyButton.m in Sources */,
 				49AA773926A461360009EF64 /* SceneDelegate.m in Sources */,
+				4935378E26A6E30300ED8944 /* ColorViewController.m in Sources */,
 				49AA775826A469930009EF64 /* ChangeImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

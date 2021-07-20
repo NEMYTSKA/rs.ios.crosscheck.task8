@@ -31,13 +31,14 @@
         [self.layer setShadowColor:[UIColor colorNamed:@"Light Green Sea"].CGColor];
         [self.layer setShadowRadius:1];
         [self.layer setShadowOpacity:1];
+        [self setTintColor:[UIColor colorNamed:@"Light Green Sea"]];
 
         
     } else {
         [self.layer setShadowOffset:CGSizeMake(0, 0)];
         [self.layer setShadowColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.25].CGColor];
         [self.layer setShadowRadius:1];
-        [self.layer setShadowOpacity:1];
+        [self.layer setShadowOpacity:0];
         
         [self.layer setBorderColor:[[UIColor grayColor] colorWithAlphaComponent:0.4].CGColor];
 

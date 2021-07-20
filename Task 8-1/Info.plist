@@ -11,10 +11,6 @@
 		<string>Montserrat-Regular.ttf</string>
 		<string>Montserrat-Medium.ttf</string>
 	</array>
-	<key>CFBundleGetInfoString</key>
-	<string></string>
-	<key>CFBundleDisplayName</key>
-	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
